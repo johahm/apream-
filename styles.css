@@ -96,23 +96,23 @@ place-items: center;
 .item-1 {
   z-index: 2;
   opacity: 1;
-  background: url('/img/recicla.jpg');
+  background: url('img/recicla.jpg');
   background-size: cover;
 }
 .item-2 {
-  background: url('/img/recicla1.jpg');
+  background: url('img/recicla1.jpg');
   background-size: cover;
 }
 .item-3 {
-  background: url('/img/recicla2.jpg');
+  background: url('img/recicla2.jpg');
   background-size: cover;
 }
 .item-4 {
-  background: url('/img/recicla3.jpg');
+  background: url('img/recicla3.jpg');
   background-size: cover;
 }
 .item-5 {
-  background: url('/img/recicla4.jpg');
+  background: url('img/recicla4.jpg');
   background-size: cover;
 }
 *:target ~ .item-1{
@@ -214,7 +214,7 @@ h2 {
   }
   body {
   background-color: whitesmoke;
-  background-image: url('/img/fondo1.jpg');
+  background-image: url('img/fondo1.jpg');
   background-repeat: no-repeat; 
   background-size:cover;
   background-attachment: fixed;
@@ -316,23 +316,23 @@ padding:2px;
 .item-1 {
   z-index: 2;
   opacity: 1;
-  background: url('/img/recicla.jpg');
+  background: url('img/recicla.jpg');
   background-size: cover;
 }
 .item-2 {
-  background: url('/img/recicla1.jpg');
+  background: url('img/recicla1.jpg');
   background-size: cover;
 }
 .item-3 {
-  background: url('/img/recicla2.jpg');
+  background: url('img/recicla2.jpg');
   background-size: cover;
 }
 .item-4 {
-  background: url('/img/recicla3.jpg');
+  background: url('img/recicla3.jpg');
   background-size: cover;
 }
 .item-5 {
-  background: url('/img/recicla4.jpg');
+  background: url('img/recicla4.jpg');
   background-size: cover;
 }
 *:target ~ .item-1{
