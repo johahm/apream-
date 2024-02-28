@@ -1,0 +1,436 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  background-image: url('/img/fondo1.jpg');
+  background-repeat: no-repeat; 
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Geneva"; 
+}
+
+#contenedor-padre {
+
+display: grid;
+place-items: center; 
+text-align: center; 
+
+}
+
+.logo1 {
+  width: 100px;
+  height: 100px;
+}
+
+
+.caja {
+width: 850px;
+display: flex;
+align-items: center;
+justify-content: center;
+} 
+
+#contenedor-hijo {
+  height:230px;
+  width:700px;
+  margin:0;
+  padding: 0; 
+   
+}
+h1 {
+  font-size: 15px;
+  color: rgb(248, 245, 245);
+  text-shadow:  1px 0 rgb(12, 4, 244);
+  text-align: center;
+}
+#tecnico {
+height:230px;
+width:700px;
+padding: 0;
+display: grid;
+place-items: center;  
+
+}
+.carousel-wrapper {
+  height: 500px;
+  position: relative;
+  width: 400px;
+  display: block;
+  margin-top: 90px;
+  border: 2px solid black;
+}
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+  border: solid rgb(0, 255, 21);
+  border-width: 0 9px 9px 0;
+  display: inline-block;
+  padding: 27px;
+}
+.arrow-prev {
+  left: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+.arrow-next {
+  right: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^= "item"] {
+  display: none;
+}
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url('/img/recicla.jpg');
+  background-size: cover;
+}
+.item-2 {
+  background: url('/img/recicla1.jpg');
+  background-size: cover;
+}
+.item-3 {
+  background: url('/img/recicla2.jpg');
+  background-size: cover;
+}
+.item-4 {
+  background: url('/img/recicla3.jpg');
+  background-size: cover;
+}
+.item-5 {
+  background: url('/img/recicla4.jpg');
+  background-size: cover;
+}
+*:target ~ .item-1{
+  opacity: 0;
+}
+#item-1:target ~ .item-1, #item-2:target ~ .item-2{
+  opacity: 1;
+
+}
+#item-2:target ~ .item-2, #item-3:target ~ .item-3{
+  z-index: 3;
+  opacity: 1;
+} 
+#item-3:target ~ .item-3, #item-4:target ~ .item-4{
+  z-index: 3;
+  opacity: 1;
+}
+
+#item-4:target ~ .item-4, #item-5:target ~ .item-5{
+  z-index: 3;
+  opacity: 1;
+}
+h5 {
+  font-size: 10px;
+  font-style: italic;
+  color:whitesmoke ;
+  margin: auto;
+  text-align: center;
+}
+h3 {
+  color: whitesmoke;
+  -webkit-text-stroke-width: 0.5px; /* Anchura del borde */
+  -webkit-text-stroke-color: green; /* Color del borde */
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+  width: 650px; 
+  margin-top: 20px;
+  padding: 0; 
+}
+h2 {
+ background-color: rgb(51, 243, 3);
+  text-align:center;
+  font-style: italic;
+  color: black;
+  margin: auto;
+  border-radius: 2px;
+  padding: 4px;
+}
+#contacto, h4 {
+  /*margin-left: 700px;*/
+  font-size: 25px;
+  color: rgb(245, 245, 245);
+  text-shadow:  1px 0 rgb(6, 245, 85);
+  width: 200px;
+  border-radius: 5px;
+  padding: 13px;
+  display: grid;
+  place-items: center;
+  /*margin: 750px;*/
+}
+.container-boton{
+  background-color: #1ae907;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index:400;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.boton{
+  width: 60px;
+  transition: ease 1s;
+}
+
+@keyframes efecto{
+  0%{
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100%{
+      box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
+
+/*RESONSIVE*/   /*RESONSIVE*/   /*RESONSIVE*/
+
+@media only screen and (min-width:360px) and (max-width:740px){
+  * {
+    box-sizing: border-box;
+  }
+  body {
+  background-color: whitesmoke;
+  background-image: url('/img/fondo1.jpg');
+  background-repeat: no-repeat; 
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Geneva"; 
+  }
+#contenedor-padre {
+
+  display: grid;
+  place-items: center; 
+  text-align: center;
+  align-content: center;
+  justify-content: space-around;
+  justify-items: center;
+    
+}
+
+.logo1 {
+  width: 90px;
+  height: 90px;
+}
+
+
+.caja {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin: auto 20px;
+}
+.carousel-wrapper {
+  height: 500px;
+  position: relative;
+  width: 400px;
+  display: block;
+  margin-top: 90px;
+  border: 2px solid black;
+}
+h1 {
+  font-size: 10px;
+  color: rgb(248, 245, 245);
+  text-shadow:  1px 0 rgb(12, 4, 244);
+  text-align: center;
+}
+#tecnico {
+height:200px;
+width:300px;
+margin:0;
+padding: 0; 
+}
+#contenedor-hijo {
+height:200px;
+width:80%;
+padding:2px;
+
+}
+
+.carousel-wrapper {
+  height: 330px;
+  position: relative;
+  width: 300px;
+  display: block;
+  margin: 0 50px 0;
+  border: 2px solid black;
+}
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+   border: solid blue;
+  border-width: 0 9px 9px 0;
+  display: inline-block;
+  padding: 27px;
+}
+.arrow-prev {
+  left: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+
+}
+.arrow-next {
+  right: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}*/
+
+[id^= "item"] {
+  display: none;
+}
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url('/img/recicla.jpg');
+  background-size: cover;
+}
+.item-2 {
+  background: url('/img/recicla1.jpg');
+  background-size: cover;
+}
+.item-3 {
+  background: url('/img/recicla2.jpg');
+  background-size: cover;
+}
+.item-4 {
+  background: url('/img/recicla3.jpg');
+  background-size: cover;
+}
+.item-5 {
+  background: url('/img/recicla4.jpg');
+  background-size: cover;
+}
+*:target ~ .item-1{
+  opacity: 0;
+}
+#item-1:target ~ .item-1, #item-2:target ~ .item-2{
+  opacity: 1;
+
+}
+#item-2:target ~ .item-2, #item-3:target ~ .item-3{
+  z-index: 3;
+  opacity: 1;
+} 
+#item-3:target ~ .item-3, #item-4:target ~ .item-4{
+  z-index: 3;
+  opacity: 1;
+}
+
+#item-4:target ~ .item-4, #item-5:target ~ .item-5{
+  z-index: 3;
+  opacity: 1;
+}
+h5 {
+  font-size: 10px;
+  font-style: italic;
+  color:whitesmoke ;
+  margin: 20px;
+  text-align: center;
+}
+h3 {
+  color: black;
+  font-size: 18px;
+  justify-content: left;
+  align-items: center;
+  width: 250px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+   padding: 0;
+}
+h2 {
+  background-color: rgb(51, 243, 3);
+   text-align:center;
+   font-style: italic;
+   color: black;
+   margin: auto;
+   border-radius: 4px;
+   padding: 4px;
+ }
+#contacto, h4 {
+  font-size: 20px;
+  color: rgb(248, 245, 245);
+  border-color: rgb(18, 17, 17);
+  border-width: 2px;
+  border-style: solid;
+  text-shadow:  1px 0 rgb(65, 13, 223);
+  background-color: rgba(16, 16, 18, 0.765);
+  width: 150px;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 2px 2px 0;
+  place-items: center;
+  display: grid;
+}
+#contacto {
+  place-items: center;
+  display: grid;
+  place-items: center;
+}
+.container-boton{
+  background-color: #2e6329;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index:400;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.boton{
+  width: 60px;
+  transition: ease 1s;
+}
+
+@keyframes efecto{
+  0%{
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100%{
+      box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
+
+}
